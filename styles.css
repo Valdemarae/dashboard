@@ -5,12 +5,99 @@
 
 body {
     display: grid;
-    grid-template: 150px 1fr 35px / 250px 1fr;
+    grid-template: 160px 1fr 35px / 250px 1fr;
     min-height: 100vh;
 }
 
 .header {
     grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3px 50px 0 20px;
+}
+
+.header a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .higher {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .higher .search, .header .higher .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .higher .search {
+    flex: 1;
+    gap: 10px;
+}
+
+.header .higher .search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header .higher .search input {
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    background-color: #e5e7eb;
+    width: 80%;
+    padding-left: 10px;
+}
+
+.header .higher svg {
+    height: 25px;
+}
+
+.header .higher img {
+    height: 58px;
+}
+
+.header .lower {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .lower .left, .header .lower .right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header .lower .left {
+    font-weight: bold;
+}
+
+.header .lower .left .bigger {
+    font-size: 27px;
+}
+
+.header .lower .right {
+    gap: 20px;
+}
+
+.header .lower .right a {
+    background-color: #0284c7;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 7px 26px;
+}
+
+.header .lower img {
+    height: 90px;
 }
 
 .sidebar {
@@ -45,7 +132,7 @@ body {
     font-weight: bold;
 }
 
-a:hover {
+.sidebar a:hover {
     color: rgb(222, 222, 222);
 }
 
