@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-VariableFont_wght.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +14,7 @@ body {
     display: grid;
     grid-template: 160px max-content 35px / 220px auto;
     min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
 }
 
 .header {
