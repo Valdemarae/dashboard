@@ -5,7 +5,7 @@
 
 body {
     display: grid;
-    grid-template: 160px 1fr 35px / 250px 1fr;
+    grid-template: 160px 1fr 35px / 220px 1fr;
     min-height: 100vh;
 }
 
