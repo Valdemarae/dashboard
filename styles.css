@@ -101,7 +101,7 @@ body {
 }
 
 .sidebar {
-    grid-area: 1 / 1 / -1 / 2;
+    grid-area: 1 / 1 / -2 / 2;
     background-color: #0284c7;
     display: flex;
     flex-direction: column;
@@ -142,7 +142,7 @@ body {
 }
 
 .footer {
-    grid-area: -2 / 2 / -1 / 3;
+    grid-area: -2 / 1 / -1 / 3;
     background-color: #6b7280;
     color: white;
     display: flex;
@@ -207,6 +207,7 @@ body {
 
 .content .cards {
     grid-area: 1 / 1 / -1 / 2;
+    padding-right: 20px;
 }
 
 .content .trending img {
@@ -245,4 +246,15 @@ body {
 
 a:hover, button:hover {
     transform: scale(1.03);
+}
+
+.content .cards .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
 }
