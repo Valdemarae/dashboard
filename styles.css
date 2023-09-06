@@ -242,3 +242,7 @@ body {
     padding: 13px;
     gap: 7px;
 }
+
+a:hover, button:hover {
+    transform: scale(1.03);
+}
