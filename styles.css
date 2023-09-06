@@ -163,22 +163,25 @@ body {
     grid-area: 2 / 2 / -2 / 3;
     background-color: #e5e7eb;
     display: grid;
-    grid-template-columns: 1fr 265px;
-    grid-template-rows: 280px 265px 1fr;
-    padding: 10px;
+    grid-template-columns: 1fr 245px;
+    grid-template-rows: auto auto 1fr;
+    padding: 10px 20px;
 }
 
 .content .announcements {
     grid-area: 1 / 2 / 2 / 3;
+}
+
+.announcements, .trending, .cards {
     display: grid;
     grid-template-rows: 37px 1fr;
 }
 
-.content .announcements h3 {
+.content h3 {
     align-self: center;
 }
 
-.content .announcements div {
+.content .announcements div, .content .trending > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -187,14 +190,14 @@ body {
     padding: 8px 18px 0 13px;
 }
 
-.content p {
+.content .announcements p {
     padding-bottom: 15px;
     color: grey;
-    font-size: 10px;
+    font-size: 12px;
     border-bottom: 1px solid rgb(187, 187, 187);
 }
 
-.content .last {
+.content .announcements .last {
     border-bottom: none;
 }
 
@@ -204,4 +207,38 @@ body {
 
 .content .cards {
     grid-area: 1 / 1 / -1 / 2;
+}
+
+.content .trending img {
+    height: 47px;
+}
+
+.content .trending a > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+}
+
+.content a:hover {
+    color: #0284c7;
+}
+
+.content .trending p:last-child {
+    font-size: 13px;
+    color: grey;
+}
+
+.content .trending p:first-child {
+    font-size: 16px;
+}
+
+.content .trending > div {
+    justify-content: space-around;
+    padding: 13px;
+    gap: 7px;
 }
